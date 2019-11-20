@@ -5,6 +5,10 @@ import store from './store';
 
 Vue.config.productionTip = false;
 
+Vue.config.ignoredElements = [
+  'service-1',
+];
+
 new Vue({
   router,
   store,
