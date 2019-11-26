@@ -9,6 +9,12 @@ Vue.config.ignoredElements = [
   'service-1',
 ];
 
+declare module 'vue/types/vue' {
+  interface Vue {
+    $app: App;
+  }
+}
+
 new Vue({
   router,
   store,
